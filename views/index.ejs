@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Project</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Rammetto+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/styles/style.css">
+
+</head>
+<body>
+  <header>
+    <div class="heading">
+      <h1 class="h bowlby-one-sc-regular">Moving  Object  Detection</h1>
+    </div>
+    <nav class="poppins-regular nav-container">
+      <ul>
+        <li><a href="#Home" class="a active">Home</a></li>
+        <li><a href="#Code" class="a">Code</a></li>
+        <li><a href="#Run" class="a">Run</a></li>
+        <li><a href="#Deploy" class="a">Deploy</a></li>
+        <div class="bottom"></div>
+      </ul>
+    </nav>
+  </header>
+  <div class="empty" id="Home"></div>
+  <section >
+    <h2 class="poppins-semibold">Project Overview</h2><hr>
+    <div class="img">
+      <img src="/image/[FREE - HDconvert.com] AdobeStock_143220535_Preview-transformed.png" alt=""
+      height= "220px" width="370px" >
+    </div>
+    <p class="poppins-regular">Our project on moving object detection represents a significant advancement in computer vision technology. In today's data-rich environment, the ability to accurately identify and track moving objects within video streams is paramount. Whether it's bolstering surveillance systems, enabling autonomous vehicles to navigate safely, or optimizing video analytics for diverse industries, our solution offers a versatile and robust approach to addressing the challenges of dynamic environments. Leveraging cutting-edge algorithms, our system boasts real-time detection capabilities, ensuring prompt response to dynamic situations. With high accuracy and efficiency, it reliably distinguishes objects of interest amidst complex backgrounds and varying lighting conditions. Moreover, its adaptable nature allows seamless integration into diverse environments, making it a versatile solution for a wide range of applications. This addresses a critical need in various fields where visual data analysis plays a pivotal role in decision-making processes.</p>
+    <h2 class="poppins-semibold">Working</h2><hr>
+    <p class="poppins-regular">Utilizing advanced computer vision techniques, our moving object detection algorithm analyzes consecutive frames of a video sequence to identify regions of interest exhibiting motion. By comparing pixel intensity changes and employing sophisticated motion models, it distinguishes between static background elements and moving objects, enabling precise localization and tracking. Our demo video showcases the prowess of our moving object detection system in action, illustrating its effectiveness across various scenarios. From crowded urban streets to open landscapes, it accurately identifies and tracks moving objects, demonstrating its efficacy in enhancing situational awareness and facilitating informed decision-making. This visual demonstration underscores the robustness and reliability of our solution, showcasing its real-world applicability and potential impact across industries.</p>
+    <h2 class="poppins-semibold">Architecture</h2><hr>
+    <div class="arc">
+      <div class="pbox"></div>
+      <div class="arrow  right "></div>
+      <div class= "box hover-text hover-text" style="height:300px; width:10px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          64, 160x240</span>
+      </div>
+      <div class="pbox"></div>
+      <div class="arrow  right"></div>
+      <div class= "box hover-text" style="height:270px; width:10px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          64, 90x120
+        </span>
+      </div>
+      <div class="pbox" ></div>
+      <div class="arrow  right "></div>
+      <div class= "box hover-text" style="height:210px; width:30px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          128, 40x90
+        </span>
+      </div>
+      <div class="pbox"></div>
+      <div class="arrow  right "></div>
+
+      <div class= "box hover-text" style="height:130px; width:50px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          256, 20x30
+        </span>
+      </div>
+
+      <div class="pbox"></div>
+      <div class="arrow  right "></div>
+
+      <div class= "box hover-text" style="height:70px; width:100px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          512, 10x15
+        </span>
+      </div>
+
+      <div class="pbox" style="background-color: brown;"></div>
+      <div class="arrow  right " style="border-color: brown;"></div>
+      <div class= "box hover-text" style="height:70px; width:100px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          10x15
+        </span>
+      </div>
+      <div class="pbox"  style="background-color: green;"></div>
+      <div class="arrow  right green"></div>
+      <div class= "box hover-text" style="height:70px; width:60px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          20x30
+        </span>
+      </div>
+      <div class= "box hover-text" style="height:70px; width:20px; background-color: white">
+      </div>
+      <div class="pbox"  style="background-color: #FF5BAE;"></div>
+      <div class="arrow  right pink"></div>
+      <div class= "box hover-text" style="height:70px; width:60px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          20x30
+        </span>
+      </div>
+      <div class="pbox" style="background-color: green;"></div>
+      <div class="arrow  right green"></div>
+      <div class= "box hover-text" style="height:100px; width:40px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          40x60
+        </span>
+      </div>
+      <div class= "box hover-text" style="height:100px; width:20px; background-color: white"></div>
+      <div class="pbox" style="background-color: #FF5BAE;"></div>
+      <div class="arrow  right pink"></div>
+      <div class= "box hover-text" style="height:100px; width:20px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          40x60
+        </span>
+      </div>
+      <div class="pbox" style="background-color: green;"></div>
+      <div class="arrow  right green"></div>
+      <div class= "box hover-text" style="height:120px; width:30px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          80x120
+        </span>
+      </div>
+      <div class= "box hover-text" style="height:120px; width:10px; background-color: white"></div>
+      <div class="pbox" style="background-color: #FF5BAE;"></div>
+      <div class="arrow  right pink"></div>
+      <div class= "box hover-text" style="height:120px; width:25px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          80x120
+        </span>
+      </div>
+      <div class="pbox" style="background-color: green;"></div>
+      <div class="arrow  right green"></div>
+      <div class= "box hover-text" style="height:150px; width:40px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          160x240
+        </span>
+      </div>
+      <div class= "box hover-text" style="height:150px; width:15px; background-color: white"></div>
+      <div class="pbox pink" style="background-color: #FF5BAE;"></div>
+      <div class="arrow  right pink"></div>
+      <div class= "box hover-text" style="height:150px; width:20px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          160x240
+        </span>
+      </div>
+      <div class="pbox" style="background-color: green;"></div>
+      <div class="arrow  right green"></div>
+      <div class= "box hover-text" style="height:250px; width:30px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          320x420
+        </span>
+      </div>
+      <div class= "box hover-text" style="height:250px; width:10px; background-color: white"></div>
+      <div class="pbox" style="background-color: #FF5BAE;"></div>
+      <div class="arrow  right pink"></div>
+      <div class= "box hover-text" style="height:250px; width:10px">
+        <span class="tooltip-text poppins-regular" id="bottom">
+          320x420
+        </span>
+      </div>
+      <div class="pbox" style="background-color: lightgreen"></div>
+      <div class="arrow right" style="border-color: lightgreen;"></div>
+    </div>
+    <center>
+      <p class="poppins-regular">Fig - Object Detection Model using CNN</p>
+    </center>
+  </section>
+
+  <div class="empty" id="Code"></div>
+<!--Code-->
+  <section >
+    <h2  class="poppins-semibold">Code</h2><hr>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225251.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225334.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225346.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225358.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225410.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225434.png" alt="">
+    </div>
+    <div class="code">
+      <img src="./image/Screenshot 2024-04-07 225618.png" alt="">
+    </div>
+  </section>
+
+  <div class="empty" id="Run"></div>
+  <!--Run-->
+  <div ></div>
+  <section>
+    <h2  class="poppins-semibold">Run</h2><hr>
+      <p class="poppins-regular">Attach files to project<p>
+    <form class="dropzone-box" method="post" enctype="multipart/form-data" action="http://localhost:3000/upload" >
+      <div class="dropzone-area run">
+        <p class="poppins-regular"> Click to upload</p>
+        <input type="file" required id="upload-file"
+        name="files" multiple>
+        <% if(locals.file){ %>
+          <p class="message poppins-regular"><%= file %> files Uploaded successfully
+          </p>
+        <% }else{ %>
+          <p class="message upload poppins-regular">No Files Selected</p>
+        <% } %> 
+        <video autoplay controls src="" type="video/mp4" class="transparent" id="upload-file" width="520" height="440" hidden></video> 
+      </div>
+      <div class="dropzone-actions">
+        <button type="reset" class="poppins-regular"> Cancel</button>
+        <button type="submit" id="submit-button" class="poppins-regular">Save 
+        </button>
+      </div>
+    </form>
+  </section>
+
+  <div class="empty" id="Deploy"></div>
+  <!--Deploy-->
+  <section >
+    <h2 class="poppins-semibold">Deployment</h2><hr>
+    <div class="container">
+      <video autoplay width="520" height="440" controls src="/video/output.mp4" id="output" type="video/mp4">
+    
+      </video>
+      <button type="submit">
+        <a href="/video/output.mp4" download="output.mp4" class="poppins-regular">Download</a>
+      </button>
+    </div>
+  </section>
+  <script> 
+    document.getElementById("upload-file")
+    .onchange = function(event) {
+      let file = event.target.files[0];
+      let blobURL = URL.createObjectURL(file);
+      document.querySelector("video").src = blobURL;
+      document.querySelector("video").removeAttribute("hidden");
+      document.querySelector(".message").innerHTML ="File uploaded: 1";
+    };
+    $('nav a').click(function(){
+   /* remove class from prior active link*/
+   $('.active').removeClass('active');
+   /* "this" is current link clicked*/
+   $(this).addClass('active');
+});
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>
